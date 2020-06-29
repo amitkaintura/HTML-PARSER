@@ -1,11 +1,21 @@
-from bs4 import BeautifulSoup
-# this is a comment
-json = {}
+#Requirements
+#pip3 install bs4
 
-with open('New Lead .html', 'r') as fin:
-    text = fin.read()
+# Basic fundamentals of web scraping
+
+# import BeautifulSoup for selecting HTML tags easily
+from bs4 import BeautifulSoup
+
+json = {}
+#file handling operation
+with open('New Lead .html', 'r') as src:
+    text = src.read()
+    
+    # Create a variable called "soup" to parse the HTML content
+    
     soup = BeautifulSoup(text, 'html.parser')
     
+    # findall function is used to fetch all tags at a single time.
     name = soup.find_all('strong')[1].get_text()
     email = soup.find_all('a')[4].get_text()
     phone = soup.find_all('a')[3].get_text()
