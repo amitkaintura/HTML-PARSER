@@ -20,7 +20,9 @@ Languages and libraries used in this project.
 2. BeautifulSoup 4.9.0
 
 ### DESCRIPTION
-In this project we create a Html Scraper, by using this we can easily extract any useful information information like Name, Email, Phone, Address etc.forom the html content or file. So first of all in your sysytem, you need python 3 and BeautifulSoup, if you dont have these, you can download them by above given method.So 
+In this project we create a Html Scraper, by using this we can easily extract any useful information like Name, Email, Phone, Address etc. from the html content or file.
+So first of all in your sysytem, you need python 3 and BeautifulSoup, if you dont have these, you can download them by above given method.So first of all we get the Html content
+from html file by file handling operation and then we use BeautifulSoup to parse html tags easily and get the relevant information and then we save the relevant data into json file.
 
 ### CONTRIBUTOR
 1. Amit Singh Kaintura 
